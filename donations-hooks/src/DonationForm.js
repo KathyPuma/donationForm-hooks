@@ -1,20 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import RecentDonations from "./RecentDonations"
 const DonationForm = (props) => {
-    const [submittedForm, setSubmittedForm] = useState([]);
-    const submitedForm = () => {
-        if (props.name && props.message && props.donationAmount) {
-            let obj = {
-                donorName: props.name,
-                donorMessage: props.message,
-                donorDonation: props.donationAmount
-            }
-            setSubmittedForm([...submittedForm, obj])
-        }
-    }
     return (
         <div className='donation-form section'>
-
             <label htmlFor='name'>Name: </label>
             <input
                 id='name'
@@ -44,12 +31,7 @@ const DonationForm = (props) => {
                 value={props.donationAmount}
             />
             <span>{props.donationAmount}</span>
-
-            <input type="submit" value="Donate" onClick={submitedForm} />
-            <RecentDonations
-                donationList={submittedForm}
-
-            />
+            <input type="submit" value="Donate" onClick={props.submitedFormData} />
         </div>
 
     )
