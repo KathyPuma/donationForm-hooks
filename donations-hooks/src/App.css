@@ -5,26 +5,8 @@
   grid-template-columns: 500px 1fr;
 }
 
-.App-logo {
-height: 40vmin;
-}
 
-.App-header {
-background-color: #282c34;
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-font-size: calc(10px + 2vmin);
-color: white;
-}
-
-.App-link {
-color: #09d3ac;
-}
-
-
+/* 
 h5{
 font-size: 1.25rem;
 margin-bottom: .25rem!important;
@@ -141,4 +123,4 @@ display: flex;
   background-color: #007bff;
   transition: width .6s ease;
   background-color: #28a745!important;
-}
+} */
