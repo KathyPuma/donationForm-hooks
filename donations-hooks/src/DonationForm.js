@@ -8,7 +8,7 @@ const DonationForm = (props) => {
                 name='name'
                 type='text'
                 onChange={props.nameInput}
-                value={props.donorName}
+                value={props.name}
             />
 
             <label htmlFor='caption'>Caption: </label>

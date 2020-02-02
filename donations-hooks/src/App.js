@@ -24,8 +24,13 @@ function App() {
         donorMessage: message,
         donorDonation: donationAmount
       }
+
       setSubmittedForm([...submittedForm, obj])
+      setName('')
+      setMessage('')
+      setDonationAmount(0)
     }
+
   }
 
 
